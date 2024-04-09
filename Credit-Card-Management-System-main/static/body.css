@@ -1,0 +1,13 @@
+body{
+    background-image: url("credit.jpg");
+    background-repeat :no-repeat;
+    background-size:cover;
+}
+#credpay {
+    color: white;
+    text-align :left;
+    text-shadow :  1px 1px 5px #FF0000,0 0 50px yellow;
+    padding-left :50px;
+    padding-top: 50px;
+
+}

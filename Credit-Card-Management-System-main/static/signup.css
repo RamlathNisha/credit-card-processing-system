@@ -1,0 +1,134 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 8vh;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background:rgba(169, 160, 160, 0.5) ;
+    color: #f8f4f4;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #ffd700;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #ffd700;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgb(245, 172, 0);
+  }
+  
+  .signin a {
+    color:#ffd700 ;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  #form label {
+    position: relative;
+  }
+  
+  #form label .input {
+    background-color:rgba(169, 160, 160, 0.2) ;
+    color: white;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  #form label .input + span {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    cursor: text;
+    color: #ffd700;
+    top: 0px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  
+  .input {
+    font-size: medium;
+    height: 3.75em;
+    width: 3em;
+  }
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ffd700;
+  }
+  
+  .submit:hover {
+    background-color: #f4ac00;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+a{
+  color:#f4ac00;
+}
