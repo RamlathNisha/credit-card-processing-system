@@ -110,11 +110,12 @@ def trans():
     mail = data['user']['mailid']
     user_data = retrieve_additional_data(mail)
     userid= user_data[3]
+    balance=user_data[8]
     connection = mysql.connect
     cur = connection.cursor()
     cur.execute("SELECT * FROM transactions WHERE userid = %s ORDER BY transaction_id DESC", (userid,))
     transaction_data = cur.fetchall()
-    return render_template('trans.html',transactions = transaction_data)
+    return render_template('trans.html',transactions = transaction_data,balance=balance)
 
 @app.route('/addpro', methods = ['POST'])
 def addpro():
